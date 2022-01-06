@@ -7,22 +7,26 @@ function App() {
   return (
     <div className="App">
       <header className=''>this is a header</header>
-      <main
-        style={{ height: '800px' }}
-        className='d-flex col border border-warning border-3'>
-        <div className='col-2 border border-danger border-5'>
-          side navbar
-          {/* <Navbar /> */}
-        </div>
-        <div className='col-8 border border-danger border-5'>
-          main article
-          {/* <Outlet /> */}
-        </div>
-        <div className='col-2 border border-danger border-5'>
-          aside content
-          {/* <Aside /> */}
-        </div>
-      </main >
+      <div className="container-fluid">
+        <main
+          className='d-flex row col-md border border-warning'
+        >
+          <div className='row-2 col-md-4 col-lg-2 border border-danger'>
+            side navbar
+            {/* <Navbar /> */}
+          </div>
+          <div style={{ height: '800px' }}
+            className=' row-8 col-md-8 col-lg-8 border border-danger'>
+            main article
+            {/* <Outlet /> */}
+          </div>
+          <div className='row-2 col col-lg-2 border border-danger'>
+            aside content
+            {/* <Aside /> */}
+          </div>
+        </main >
+      </div>
+
       <div className='border border-info position-relative bottom-0'>
         footer
         {/* <Footer /> */}
