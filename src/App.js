@@ -12,25 +12,24 @@ function App() {
         <main
           className='d-flex row col-md border border-warning'
         >
-          <div className='row-2 col-md-4 col-lg-2 border border-danger'>
-            side navbar
-            {/* <Navbar /> */}
+          <div className='row-2 col-md-2 col-lg-2 navbar-dark bg-secondary bg-gradient rounded-3'>
+            <Navbar />
           </div>
           <div style={{ height: '800px' }}
-            className=' row-8 col-md-8 col-lg-8 border border-danger'>
+            className=' row-8 col-md-10 col-lg-8 border border-danger'>
             main article
-            {/* <Outlet /> */}
+            <Outlet />
           </div>
           <div className='row-2 col col-lg-2 border border-danger'>
             aside content
-            {/* <Aside /> */}
+            <Aside />
           </div>
         </main >
       </div>
 
       <div className='border border-info position-relative bottom-0'>
         footer
-        {/* <Footer /> */}
+        <Footer />
       </div>
     </div>
   );
