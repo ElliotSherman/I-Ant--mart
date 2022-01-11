@@ -27,7 +27,7 @@ function App() {
         </main >
       </div>
 
-      <div className='border border-info position-relative bottom-0 mt-1'>
+      <div className='border border-info position-relative bottom-0 mt-1 position-fixed w-100'>
         <Footer />
       </div>
     </div>

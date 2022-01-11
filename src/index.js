@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import About from './About';
 import Bizcard from './Bizcard';
 import Projects from './Projects';
+import '@fortawesome/fontawesome-free/css/all.css'
 
 ReactDOM.render(
   <BrowserRouter>
@@ -20,6 +21,7 @@ ReactDOM.render(
         </Route>
         <Route path={'about'} element={<About />} />
       </Route>
+      <Route path={'*'} element={<App />} />
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')
